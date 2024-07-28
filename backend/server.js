@@ -10,18 +10,12 @@ const userRoutes = require("./apis/users/routes");
 
 const frontendURI = "https://firstmernappfrontend-mandar1632s-projects.vercel.app";
 
-app.use(cors(
-   {
-      origin: ["https://firstmernappbackend-mandar1632s-projects.vercel.app"],
-      methods: ["POST","GET"],
-      credentials: true
-   }
-));
 app.use(bodyParser.json({ limit: "5mb" }));
 app.use(cookieParser());
 app.use(
   cors({
     origin: frontendURI, // Replace with your frontend domain
+    methods: ["POST","GET"],
     credentials: true, // Allow credentials (cookies, authorization headers)
   })
 );
