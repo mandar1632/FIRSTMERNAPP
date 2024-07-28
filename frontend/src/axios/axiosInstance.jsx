@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { authTokenActions } from "../store/authSlice";
 
-const backendURI = "http://localhost:5000";
+const backendURI = "https://firstmernappbackend-mandar1632s-projects.vercel.app";
 
 const AxiosInstance = ({ headers }) => {
   const dispatch = useDispatch();
