@@ -8,7 +8,7 @@ const app = express();
 
 const userRoutes = require("./apis/users/routes");
 
-const frontendURI = "http://localhost:5173";
+const frontendURI = "https://firstmernappfrontend-mandar1632s-projects.vercel.app";
 
 app.use(cors(
    {
