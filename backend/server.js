@@ -10,6 +10,9 @@ const userRoutes = require("./apis/users/routes");
 
 const frontendURI = "http://localhost:5173";
 
+app.get("/",(req, res) => {
+    res.json("Hello");
+});
 app.use(bodyParser.json({ limit: "5mb" }));
 app.use(cookieParser());
 app.use(
